@@ -78,7 +78,6 @@ Backend payment service handling payment approval, refund processing, webhook sy
 - Membership policy management API
 - Membership history query API
 - Domain responsibility separation improvement
-- Pessimistic lock implementation
 - API response standardization
 
 ### Tech Stack
