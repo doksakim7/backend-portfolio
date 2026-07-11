@@ -95,34 +95,6 @@ E-commerce backend platform focused on concurrency control, Redis caching, coupo
 
 ---
 
-## 💳 Payment System (Team Project)
-
-Backend payment service handling payment approval, refund processing, webhook synchronization, and point transactions.
-
-### Project Highlights
-- Webhook idempotency
-- Transaction consistency
-- Point refund processing
-- Payment / Order separation
-- JWT authentication
-
-### My Role
-- Membership policy management API
-- Membership history query API
-- Domain responsibility separation improvement
-- API response standardization
-
-### Tech Stack
-- Java
-- Spring Boot
-- JPA
-- MySQL
-
-🔗 Repository  
-[GitHub Repository](https://github.com/Payment-system-4team/payment-system-project)
-
----
-
 ## ☕ Coffee Order System (Personal Project)
 
 Multi-server coffee ordering system focused on distributed locking and Kafka-based event processing.
