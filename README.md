@@ -28,8 +28,9 @@ Interested in backend architecture, concurrency control, distributed systems, an
 ## DevOps & Tools
 - Docker
 - GitHub Actions
-- Postman
 - IntelliJ IDEA
+- VS Code
+- Postman
 
 ---
 
