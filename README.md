@@ -4,7 +4,7 @@ Hi, I'm Jihun Jeong 👋
 
 Junior Backend Developer specializing in Java & Spring Boot.
 
-Interested in backend architecture, concurrency control, distributed systems, and scalable backend services.
+Interested in transaction consistency, concurrency control, event-driven architecture, and scalable backend systems.
 
 ---
 
@@ -37,30 +37,38 @@ Interested in backend architecture, concurrency control, distributed systems, an
 # 📌 Projects
 
 ## 🛒 OneStop (Team Project)
+
 A hybrid e-commerce platform combining a Coupang-style marketplace with a seller onboarding system, built to handle data consistency under high traffic, asynchronous event processing, and AI-powered shopping experiences.
 
 ### Project Highlights
-- Transactional Outbox pattern for reliable event publishing
-- Kafka-based asynchronous messaging (order, payment, delivery events)
-- Redis distributed lock, pessimistic lock, and optimistic lock strategies applied by business context
-- Real-time notifications via Redis Pub/Sub + SSE
-- AI shopping assistant and AI review summarization (Spring AI)
-- Load testing with k6 and integration testing with Testcontainers
+- Reliable event-driven order and payment processing
+- Context-specific concurrency-control strategies
+- Multi-server real-time notification delivery
+- AI-powered shopping assistance and review summarization
+- Integration and performance testing with Testcontainers and k6
 
-### My Role
-- Owned Cart, Order, Payment, Coupon, and Notification domains
-- Implemented payment retry logic (`@Retryable` in `PaymentRetryFacade`)
-- Verified system reliability through k6 load testing and Testcontainers-based integration tests
+### My Contributions
+- Designed and implemented the Cart, Order, Payment, Coupon, and Notification domains
+- Implemented a polling-based Transactional Outbox with Spring Scheduler for reliable Kafka event publishing
+- Built Redis Pub/Sub-based real-time notifications to ensure SSE delivery across multi-server instances
+- Implemented pessimistic locking for inventory deduction, duplicate payment prevention, order cancellation, and coupon state transitions
+- Implemented Redisson lock, Lua script, and atomic DECR strategies for concurrent coupon issuance
+- Conducted Testcontainers-based integration tests
 
 ### Tech Stack
 - Java 17
-- Spring Boot 3
+- Spring Boot 3.x
 - Spring Security
 - Spring Data JPA / QueryDSL
-- Redis (Redisson) / Kafka
+- Redis / Redisson
+- Kafka
 - MySQL
 - Docker
 - AWS EC2
+- JUnit 5
+- Testcontainers
+- k6
+- Spring AI
 
 🔗 Repository  
 [GitHub Repository](https://github.com/one-stop-project/one-stop-backend)
@@ -72,23 +80,26 @@ A hybrid e-commerce platform combining a Coupang-style marketplace with a seller
 E-commerce backend platform focused on concurrency control, Redis caching, coupon systems, and time-sale processing.
 
 ### Project Highlights
-- Redis distributed lock
-- Coupon validation
-- Time-sale processing
+- Concurrency-controlled coupon issuance using Redis distributed locks
+- Coupon validation and usage-policy enforcement
+- Time-sale product processing
 
-### My Role
-- JWT authentication implementation
-- AWS infrastructure setup
-- CI/CD pipeline setup using GitHub Actions
-- Team leadership and repository management
+### My Contributions
+- Led the team and managed repository, issue, branch, and pull request workflows
+- Implemented JWT-based authentication and authorization
+- Provisioned AWS EC2 and RDS infrastructure
+- Built the GitHub Actions-based CI/CD pipeline
+- Coordinated API design and development schedules across the team
 
 ### Tech Stack
-- Java
-- Spring Boot
+- Java 17
+- Spring Boot 3.x
+- Spring Security / JWT
 - Redis
 - MySQL
 - Docker
-- AWS
+- AWS EC2 / RDS
+- GitHub Actions
 
 🔗 Repository  
 [GitHub Repository](https://github.com/Agricultural-E-commerce-Platform/Agricultural-E-commerce-Platform)
@@ -99,27 +110,20 @@ E-commerce backend platform focused on concurrency control, Redis caching, coupo
 
 Multi-server coffee ordering system focused on distributed locking and Kafka-based event processing.
 
-### Key Features
-- Redis distributed lock
-- Kafka asynchronous event processing
-- Redis ZSet ranking system
-- Concurrency control
-- k6 load testing
-
-### My Role
-- Backend system design
-- Redis distributed lock implementation
-- Kafka event processing
-- Redis ZSet ranking implementation
-- Concurrency handling
-- Load testing with k6
+### Technical Focus
+- Designed the system for a multi-server environment
+- Prevented concurrent point-update conflicts using Redis distributed locks
+- Built Kafka-based asynchronous order processing
+- Implemented a ranking system using Redis ZSet
+- Validated concurrency behavior and performance through k6 load tests
 
 ### Tech Stack
-- Java
-- Spring Boot
+- Java 17
+- Spring Boot 3.x
 - Redis
 - Kafka
 - Docker
+- k6
 
 🔗 Repository  
 [GitHub Repository](https://github.com/doksakim7/Personal-Coffee-Project)
@@ -130,7 +134,7 @@ Multi-server coffee ordering system focused on distributed locking and Kafka-bas
 
 - Spring AI (LLM integration, tool calling)
 - Monitoring & Incident Response (Prometheus, Grafana)
-- Performance Testing & Quantitative Analysis (k6, load test result interpretation)
+- Advanced Performance Analysis and Load Test Result Interpretation
 - Distributed Systems Design
 
 ---
