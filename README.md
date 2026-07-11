@@ -166,5 +166,5 @@ Multi-server coffee ordering system focused on distributed locking and Kafka-bas
 
 # 🔗 Links
 
-- Velog  
-  https://velog.io/@jhsky3118/posts
+- GitHub: https://github.com/doksakim7
+- Velog: https://velog.io/@jhsky3118/posts
