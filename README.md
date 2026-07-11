@@ -156,11 +156,10 @@ Multi-server coffee ordering system focused on distributed locking and Kafka-bas
 
 # 📚 Currently Learning
 
-- Distributed Systems
-- Kafka Event-Driven Architecture
-- Concurrency Control
-- Cloud Infrastructure
-- Scalable Backend Design
+- Spring AI (LLM integration, tool calling)
+- Monitoring & Incident Response (Prometheus, Grafana)
+- Performance Testing & Quantitative Analysis (k6, load test result interpretation)
+- Distributed Systems Design
 
 ---
 
