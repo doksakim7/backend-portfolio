@@ -49,6 +49,7 @@ A hybrid e-commerce platform combining a Coupang-style marketplace with a seller
 
 ### My Contributions
 - Designed and implemented the Cart, Order, Payment, Coupon, and Notification domains
+- Contributed to the Point domain by implementing the initial entity model and `@Version`-based optimistic locking
 - Implemented a polling-based Transactional Outbox with Spring Scheduler for reliable Kafka event publishing
 - Built Redis Pub/Sub-based real-time notifications to ensure SSE delivery across multi-server instances
 - Implemented pessimistic locking for inventory deduction, duplicate payment prevention, order cancellation, and coupon state transitions
