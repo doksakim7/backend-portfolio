@@ -38,7 +38,7 @@ Interested in transaction consistency, concurrency control, event-driven archite
 
 ## 🛒 OneStop (Team Project)
 
-A hybrid e-commerce platform combining a Coupang-style marketplace with a seller onboarding system, built to handle data consistency under high traffic, asynchronous event processing, and AI-powered shopping experiences.
+A hybrid e-commerce platform combining a Coupang-style marketplace with a seller onboarding system, designed to maintain data consistency under concurrent workloads, asynchronous event processing, and AI-powered shopping experiences.
 
 ### Project Highlights
 - Reliable event-driven order and payment processing
