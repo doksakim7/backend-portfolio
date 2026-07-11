@@ -35,6 +35,37 @@ Interested in backend architecture, concurrency control, distributed systems, an
 
 # 📌 Projects
 
+## 🛒 OneStop (Team Project)
+A hybrid e-commerce platform combining a Coupang-style marketplace with a seller onboarding system, built to handle data consistency under high traffic, asynchronous event processing, and AI-powered shopping experiences.
+
+### Project Highlights
+- Transactional Outbox pattern for reliable event publishing
+- Kafka-based asynchronous messaging (order, payment, delivery events)
+- Redis distributed lock, pessimistic lock, and optimistic lock strategies applied by business context
+- Real-time notifications via Redis Pub/Sub + SSE
+- AI shopping assistant and AI review summarization (Spring AI)
+- Load testing with k6 and integration testing with Testcontainers
+
+### My Role
+- Owned Cart, Order, Payment, Coupon, and Notification domains
+- Implemented payment retry logic (`@Retryable` in `PaymentRetryFacade`)
+- Verified system reliability through k6 load testing and Testcontainers-based integration tests
+
+### Tech Stack
+- Java 17
+- Spring Boot 3
+- Spring Security
+- Spring Data JPA / QueryDSL
+- Redis (Redisson) / Kafka
+- MySQL
+- Docker
+- AWS EC2
+
+🔗 Repository  
+[GitHub Repository](https://github.com/one-stop-project/one-stop-backend)
+
+---
+
 ## 🌾 Agri Commerce Platform (Team Project)
 
 E-commerce backend platform focused on concurrency control, Redis caching, coupon systems, and time-sale processing.
